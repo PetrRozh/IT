@@ -49,11 +49,12 @@ public class task1_2 {
     }
 
     public static int sumOfCubes(int[] arr) {
-        int num1 = arr[0];
-        int num2 = arr[1];
-        int num3 = arr[2];
+        int s = 0;
+        for(int i: arr){
+            s+=i*i*i;
+        }
 
-        return num1 * num1 * num1 + num2 * num2 * num2 + num3 * num3 * num3;
+        return s;
     }
 
     public static boolean abcmath(int a, int b, int c) {
